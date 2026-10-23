@@ -1,0 +1,46 @@
+.container {
+  margin: 10px;
+  padding: 5px 0;
+}
+
+.titulo-menu {
+  font-family: Arial, Helvetica, sans-serif;
+  flex-basis: 100%;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: #3d3d3d;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: stretch;
+}
+
+.cardbox {
+  flex: 1 1 380px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #6e6e6e;
+}
+.cardbox figure {
+  text-align: center;
+}
+.cardbox img {
+  width: 220px;
+}
+.preco {
+  font-size: 3rem;
+  color: red;
+}
+.cardbox p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+.cardbox h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}

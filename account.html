@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>login-cadastro</title>
+    <link
+      rel="stylesheet"
+      href="./css/global.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/account.css"
+    />
+  </head>
+  <body>
+    <header class="cab">
+      <!--MENU PRINCIPAL-->
+      <a href="./index.html"><h2>habbi's</h2></a>
+      <article>
+        <div class="navegacao">
+          <input
+            type="search"
+            name="search"
+            id="search"
+          />
+          <label for="search"
+            ><img
+              class="lup"
+              src="./img/icons/lupa.png"
+              alt="lupa_pesquisa"
+              width="5%"
+            />
+          </label>
+        </div>
+        <div>
+          <a href="#"
+            ><img
+              class="user"
+              src="./img/icons/user.png"
+              alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="./carrinho.html"
+            ><img
+              class="buys"
+              src="./img/icons/compra.png"
+              alt=""
+          /></a>
+        </div>
+      </article>
+    </header>
+
+    <main>
+      <section class="login">
+        <h2>acessar minha conta</h2>
+        <form method="post" action="#">
+
+          <div class="campos">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              required
+            />
+          </div>
+
+          <div class="campos">
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="Senha"
+              required
+              minlength="8"
+            />
+          </div>
+
+          <button type="submit">Continuar</button>
+
+        </form>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <article class="rodape-camp">
+        <div class="camp-text">
+          <h2>Alô!</h2>
+        </div>
+        <div class="camp-num">
+          <h2>(47) 9999 9999</h2>
+        </div>
+      </article>
+
+      <p></p>
+
+      <article class="rodape-camp">
+        <div class="camp-text">
+          <h2>Quer pedir por telefone?</h2>
+        </div>
+        <div class="camp-num">
+          <h2>9746 811 888</h2>
+        </div>
+      </article>
+    </footer>
+  </body>
+</html>

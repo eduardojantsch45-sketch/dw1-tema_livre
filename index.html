@@ -6,24 +6,134 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Projeto HTML e CSS</title>
+    <title>Projeto de lanches</title>
     <link
       rel="stylesheet"
       href="./css/global.css"
     />
+    <link
+      rel="stylesheet"
+      href="./css/styles.css"
+    />
   </head>
 
   <body>
-    <header>
-      <h1>Projeto HTML e CSS</h1>
+    <header class="cab">
+      <!--MENU PRINCIPAL-->
+      <a href="#"><h2>habbi's</h2></a>
+      <article>
+        <div class="navegacao">
+          <input
+            type="search"
+            name="search"
+            id="search"
+          />
+          <label for="search"
+            ><img
+              class="lup"
+              src="./img/icons/lupa.png"
+              alt="lupa_pesquisa"
+              width="5%"
+            />
+          </label>
+        </div>
+        <div>
+          <a href="./account.html"
+            ><img
+              class="user"
+              src="./img/icons/user.png"
+              alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="./carrinho.html"
+            ><img
+              class="buys"
+              src="./img/icons/compra.png"
+              alt=""
+          /></a>
+        </div>
+      </article>
     </header>
 
-    <main>
-      <p>Substitua este conteúdo pelo conteúdo do seu projeto.</p>
+    <main class="container">
+      <section class="menu">
+        <h2 class="titulo-menu">
+          Experimente <strong>nossas delíciosas Esfihas</strong>
+        </h2>
+        <article class="cardbox">
+          <p>Esfihas de carne</p>
+          <h3 class="preco">R$24,99</h3>
+          <figure>
+            <img
+              src="./img/menu/carne.png"
+              alt="esfirra-carne"
+            />
+          </figure>
+        </article>
+        <article class="cardbox">
+          <p>Esfihas de carne ou queijo</p>
+          <h3 class="preco">R$24,99</h3>
+          <figure>
+            <img
+              src="./img/menu/mista2.png"
+              alt="esfirra-carne"
+            />
+          </figure>
+        </article>
+        <article class="cardbox">
+          <p>Esfiha de frango com catupiri</p>
+          <h3 class="preco">R$24,99</h3>
+          <figure>
+            <img
+              src="./img/menu/frago.png"
+              alt="esfirra-carne"
+            />
+          </figure>
+        </article>
+        <article class="cardbox">
+          <p>Esfihas de carne</p>
+          <h3 class="preco">R$24,99</h3>
+          <figure>
+            <img
+              src="./img/menu/carne2.png"
+              alt="esfirra-carne"
+            />
+          </figure>
+        </article>
+        <article class="cardbox">
+          <p>Esfihas de carne ou queijo</p>
+          <h3 class="preco">R$24,99</h3>
+          <figure>
+            <img
+              src="./img/menu/mista.png"
+              alt="esfirra-carne"
+            />
+          </figure>
+        </article>
+      </section>
     </main>
 
-    <footer>
-      <p>Desenvolvido durante as aulas de Desenvolvimento Web.</p>
+    <footer class="rodape">
+      <article class="rodape-camp">
+        <div class="camp-text">
+          <h2>Alô!</h2>
+        </div>
+        <div class="camp-num">
+          <h2>(47) 9999 9999</h2>
+        </div>
+      </article>
+
+      <p></p>
+
+      <article class="rodape-camp">
+        <div class="camp-text">
+          <h2>Quer pedir por telefone?</h2>
+        </div>
+        <div class="camp-num">
+          <h2>9746 811 888</h2>
+        </div>
+      </article>
     </footer>
   </body>
 </html>

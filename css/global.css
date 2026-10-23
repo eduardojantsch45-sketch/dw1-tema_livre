@@ -1,27 +1,155 @@
-:root {
-  --color-background: #f8fafc;
-  --color-text: #0f172a;
-  --color-primary: #2563eb;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 100%;
-}
-
-body {
-  min-height: 100vh;
+*{
   margin: 0;
-  color: var(--color-text);
-  background-color: var(--color-background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+/*------------------------------------------------------*/
+
+.cab {
+  border: 1px solid #ddd;
+  padding: 0 10px 0;
+  background-color: #ff2727;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  padding: 10px 30px 5px;
+}
+.cab h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 40px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.cab h2:hover{
+  background-color: #dd3636;
+  border-radius: 20px;
+}
+.cab a{
+  text-decoration:none;
+}
+
+/*------------------------------------------------------*/
+
+.cab article{
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+}
+
+/*------------------------------------------------------*/
+
+.lup {
+  width: 25px;
+  padding: 2px;
+  margin-top: 12px;
+}
+.navegacao input {
+  border: 1px solid #ddd;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 3px;
+  width: 480px;
+  font-size: 1rem;
+}
+
+/*------------------------------------------------------*/
+
+.user {
+  width: 30px;
+  padding: 10px;
+}
+.user:hover {
+  border-radius: 35%;
+  background-color: #dd3636;
+}
+
+/*------------------------------------------------------*/
+
+.buys {
+  width: 30px;
+  padding: 10px;
+}
+.buys:hover {
+  border-radius: 35%;
+  background-color: #dd3636;
+}
+
+/*------------------------------------------------------*/
+
+.rodape {
+    background-color: #dd3636;
+    color: #fff;
+    padding: 10px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rodape-camp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.camp-text h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.camp-num h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.rodape p {
+    border-bottom: 1px solid #fff;
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    .rodape-camp {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .camp-text h2 {
+        font-size: 1.2rem;
+    }
+    .camp-num h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/*------------------------------------------------------*/
+
+@media (max-width: 1164px){
+  .cab{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .cab article{
+    margin: auto;
+  }
+  .lup, .user, .buys{
+    width: 25px;
+  }
+}
+
+@media (max-width: 768px){
+  .nav input{
+    width: 240px;
+  }
+}
+
+@media (max-width: 667px){
+  .cab article{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .navegacao input{
+    width: auto;
+  }
 }
